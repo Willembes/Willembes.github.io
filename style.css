@@ -4,13 +4,13 @@
   font-family: 'Poppins', sans-serif;
 }
 #banner{
-background: linear-gradient(rgba(0,0,0,0.5),#000000),url('afbeeldingen/Barbershop background.jpg');
+background: linear-gradient(rgba(0,0,0,0.5),black),url('afbeeldingen/Barbershop background.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
 .logo{
-  width: 140px;
+  width: 10%;
   position: absolute;
   top: 4%;
   left: 10%;
@@ -58,4 +58,23 @@ background: linear-gradient(rgba(0,0,0,0.5),#000000),url('afbeeldingen/Barbersho
 }
 .banner-btn a:hover{
   color: black;
+}
+
+
+#sideNav{
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: black;
+  z-index: 2; 
+}
+nav ul li{
+  list-style: none;
+  margin: 50px 20px;
+}
+nav ul li a{
+text-decoration: none;
+  color:gold;
 }
