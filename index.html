@@ -21,7 +21,7 @@
     <nav>
       <ul>
         <li><a href="#">HOME</a></li>
-        <li><a href="#">OUR SOCIALS</a></li>
+        <li><a href="#">ONZE SOCIALS</a></li>
         <li><a href="#">ALLE BEHANDELINGEN</a></li>
         <li><a href="#">REVIEWS</a></li>
         <li><a href="#">OVER ONS</a></li>
@@ -29,7 +29,23 @@
     </nav>
    </div>
 <div id="menuBtn">
-  <img src=""
+  <img src="afbeeldingen/MENU.png" id="menu"
+    </div>
+
+    <script>
+      var menuBtn = document.getElementById("menuBtn")
+      var sideNav = document.getElementById("sideNav")
+      var menu = document.getElementById("menu")
+
+      menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+          sideNav.style.right = "0";
+      } 
+      else{
+        sideNav.style.right = "-250px";
+      }
+      }
+    </script>
     
   </body>
 </html>
