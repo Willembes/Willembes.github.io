@@ -65,10 +65,11 @@ background: linear-gradient(rgba(0,0,0,0.5),black),url('afbeeldingen/Barbershop 
   width: 250px;
   height: 100vh;
   position: fixed;
-  right: 0;
+  right: -250px;
   top: 0;
   background: black;
   z-index: 2; 
+  transition: 0.5s;
 }
 nav ul li{
   list-style: none;
@@ -93,4 +94,38 @@ text-decoration: none;
 #menuBtn img{
   width: 20px;
   margin-top: 15px;
+}
+
+#feature{
+  width: 100px;
+  padding: 70px 0;
+}
+.title-text{
+  text-align: center;
+  padding-bottom: 70px;
+}
+.title-text p{
+  margin: auto;
+  color: gold;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  displat: inline-block;
+}
+.title-text p::after{
+  content: '';
+  width: 50px;
+  height: 35px;
+  background: linear-gradient(gold,black);
+  position: absolute;
+  top: -20;
+  left: 0;
+  z-index: -1;
+  transform: rotate(10deg);
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+.title-text h1{
+  font-size: 50px;
+  
 }
