@@ -26,6 +26,7 @@ background: linear-gradient(rgba(0,0,0,0.5),black),url('afbeeldingen/Barbershop 
   font-size: 130px;
   font-family: 'Kaushan Script', cursive;
 }
+/*font-size zorgt voor de grote van het lettertype*/
 .banner-text p{
   font-size: 20px;
   font-style: italic;
@@ -102,6 +103,7 @@ text-decoration: none;
 }
 
 #feature{
+  width: 100%;
   padding: 70px 0;
 }
 .title-text{
@@ -110,6 +112,7 @@ text-decoration: none;
 }
 .title-text p{
   margin: auto;
+  font-size: 20px;
   color: gold;
   font-weight: bold;
   position: relative;
@@ -121,7 +124,7 @@ text-decoration: none;
   content: '';
   width: 50px;
   height: 35px;
-  background: linear-gradient(gold ,black);
+  background: linear-gradient(gold,black);
   position: absolute;
   top: 0;
   left: 0;
@@ -153,4 +156,15 @@ text-decoration: none;
 .features-img img{
   width: 70%;
   border-radius: 10px;
+}
+.features h1{
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: gold;
+}
+.features-desc{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
