@@ -124,7 +124,7 @@ text-decoration: none;
   content: '';
   width: 50px;
   height: 35px;
-  background: linear-gradient(gold,black);
+  background:linear-gradient(gold,black) ;
   position: absolute;
   top: 0;
   left: 0;
@@ -167,4 +167,51 @@ text-decoration: none;
   display: flex;
   align-items: center;
   margin-bottom: 40px;
+}
+
+#service{
+  width: 100%;
+  padding: 70px 0;
+  background: lightgray;
+}
+.service-box{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.single-service{
+  flex-basis: 48%;
+  text-align: center;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: gold;
+  position:relative;
+}
+.single-service img{
+  width: 100%;
+  border-radius: 7px ;
+}
+.overlay{
+  width:100%;
+  height:100%;
+  position: absolute;
+  top: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  background:linear-gradient(rgba(0,0,0,0.5),black) ;
+  opacity: 0;
+  transition: 1s;
+}
+.single-service:hover .overlay{
+  opacity: 1;
+}
+.service-desc{
+  width: 80%;
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  /*translatex zorgt ervoor dat het in het midden staat*/
 }
