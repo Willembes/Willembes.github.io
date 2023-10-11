@@ -210,8 +210,25 @@ text-decoration: none;
 .service-desc{
   width: 80%;
   position: absolute;
-  bottom: 40%;
+  bottom: 0;
   left: 50%;
+  opacity: 0;
   transform: translateX(-50%);
+  transition: 1s ;
   /*translatex zorgt ervoor dat het in het midden staat*/
+}
+hr{
+background: gold ;
+  height: 2px;
+  border: 0;
+  margin: 15px auto;
+  width: 60% ;
+  /*hr zorgt voor onze horizontale lijn bij de tekst*/
+}
+.service-desc p{
+  font-size: 25px;
+}
+.single-service:hover .service-desc{
+  bottom: 40% ;
+  opacity: 1;
 }
