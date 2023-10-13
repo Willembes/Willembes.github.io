@@ -124,7 +124,7 @@ text-decoration: none;
   content: '';
   width: 50px;
   height: 35px;
-  background:linear-gradient(gold,black) ;
+  background: linear-gradient(gold,black) ;
   position: absolute;
   top: 0;
   left: 0;
@@ -267,6 +267,40 @@ background: gold ;
   margin-right: 20px;
   border-radius: 3 px;
 }
+.user-info .fa{
+  margin-left: 10px;
+  color: gold;
+  font-size: 20px;
+}
+.user-info small{
+  color: gold;
+}
 .reviews-col: hover{
-  transform: translatey(-7px);
-
+  transform: translateY(7px);
+}
+#socials{
+  width: 2000px;
+  padding: 10px 0 20px;
+  background: lightgray;
+}
+.socials-row{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.socials-left, .socials-right{
+  flex-basis: 45%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.socials-right{
+text-align: right;  
+}
+.socials-row h1{
+  margin: 10px 0;
+}
+.socials-row p{
+  line-height: 35px;
+}
